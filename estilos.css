@@ -1,0 +1,448 @@
+body {
+    background: black;
+    color: white;
+    font-family: Arial;
+}
+
+/* CONTENEDOR */
+#contenedor {
+    width: 80%;
+    margin: auto;
+}
+
+/* TÍTULO */
+.titulo-principal {
+    padding: 8px;
+}
+
+.titulo-principal h1 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+}
+.titulo {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* BANNER */
+#div1 img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+}
+
+/* MENÚ */
+#div2 {
+    position: sticky;
+    top: 0;
+    background: black;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#div2 a {
+    margin: 0 20px; 
+    letter-spacing: 6px;
+    font-size: 26px;
+}
+#div2 a:hover {
+    color: white;
+    background: white;
+    padding: 5px 10px;
+    border-bottom: 2px solid darkred;
+}
+
+/*SEPARADOR*/
+.separador {
+    color: #666 ;
+}
+/* INFO */
+#div3 {
+    display: flex;
+    gap: 20px;
+    padding: 40px 0;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* IMAGEN */
+.img-lado {
+    flex: 0 0 350px;
+}
+.img-lado img{
+    width: 100%;
+}
+
+.texto {
+    flex: 1;
+    min-width: 250px;
+    line-height: 1.6;
+}
+
+/* BLOQUE 2 */
+.bloque2 {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    align-items: center;
+}
+/* TEXTO */
+.texto2 {
+    flex: 1;
+}
+
+/* GIF */
+.gif-lado img {
+    width: 280px;
+    border-radius: 10px;
+}
+
+/* NEWS */
+/* =========================
+   NEWS (ESTILO ORIGINAL MEJORADO)
+========================= */
+.news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.card {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.card h3 {
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.card p {
+    color: #aaa;
+}
+
+.card span {
+    display: inline-block;
+    margin-top: 10px;
+    border: 1px solid white;
+    padding: 5px 10px;
+    font-size: 10px;
+    transition: 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card:hover span {
+    background: white;
+    color: black;
+}
+
+/* SPOTIFY */
+#div5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+#div5 iframe {
+    width: 100%;
+    height: 152px;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+#div5 iframe:hover {
+    transform: scale(1.05);
+}
+
+/* TEXTO CENTRO */
+.texto-centro {
+    text-align: center;
+}
+
+.texto-centro img {
+    width: 120px;
+    margin: auto;
+}
+/* TEXTO CENTRADO */
+.texto-centro {
+    text-align: center;
+}
+
+.texto-centro img {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+/* GALERIA (TABLA) */
+.tabla-galeria {
+    margin: auto;
+}
+
+.tabla-galeria td {
+    height: 200px;
+    text-align: center;
+}
+
+.tabla-galeria img {
+    max-height: 100%;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.tabla-galeria img:hover {
+    transform: scale(1.15);
+}
+/* VIDEO */
+.video-local {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.video-local video {
+    width: 50%;
+    border-radius: 10px;
+}
+/* PANSY */
+.pansy-bloque {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.pansy-bloque img {
+    width: 90%;
+    height: auto; /* 🔥 clave */
+}
+/* FAN ART */
+.fanart {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.fanart img {
+    width: 380px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.fanart img:hover {
+    transform: scale(1.15);
+}
+/* LIGHTBOX */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.lightbox:target {
+    display: flex;
+}
+
+.lightbox a {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+/* FOOTER */
+#div6 {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #333;
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    #div3,
+    .bloque2 {
+        flex-direction: column;
+        text-align: center;
+    }
+       #div5 {
+        grid-template-columns: 1fr;
+    }
+
+    .img-lado,
+    .gif-lado {
+        width: 100%;
+    }
+
+    .news {
+        grid-template-columns: 1fr;
+    }
+
+    .pansy-bloque {
+        grid-template-columns: 1fr;
+    }
+
+    .fanart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-local video {
+        width: 100%;
+    }
+}
+/*PAGINA 3 (NEWS) */
+
+/* TABLA ÁLBUM */
+.tabla-album {
+    width: 100%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background: #111;
+}
+
+.album-texto {
+    padding: 40px;
+}
+
+.titulo-album {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 4px;
+    font-size: 28px;
+}
+.tracklist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.lado h4 {
+    color: darkred;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.lado p {
+    line-height: 1.6;
+}
+
+.subtitulo-album {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.album-texto p {
+    line-height: 1.6;
+}
+
+/* TIPOGRAFÍA IGUAL A TU PÁGINA */
+.titulo-album {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.subtitulo-album {
+    color: #aaa;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+/* TRACKLIST */
+.album-texto h4 {
+    margin-top: 20px;
+    color: darkred;
+    letter-spacing: 2px;
+}
+
+.titulo-left {
+    text-align: left;
+    margin: 40px 0 10px 0;
+}
+
+.subtitulo-left {
+    text-align: left;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.subtitulo-left a {
+    color: white;
+    text-decoration: none;
+}
+
+.subtitulo-left a:hover {
+    text-decoration: underline;
+}
+
+/* SUBTITULO LINK */
+.subtitulo a {
+    color: white;
+    text-decoration: none;
+}
+
+.subtitulo a:hover {
+    text-decoration: underline;
+}
+
+/* VIDEO YOUTUBE */
+.video-youtube {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.video-youtube iframe {
+    width: 70%;
+    height: 400px;
+}
+
+/* RESPONSIVE SOLO PAGINA 3 */
+@media (max-width: 768px) {
+    .pagina3 .tabla-album tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pagina3 .album-img,
+    .pagina3 .album-texto {
+        width: 100%;
+    }
+
+    .tracklist {
+        grid-template-columns: 1fr;
+    }
+}
